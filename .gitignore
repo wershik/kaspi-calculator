@@ -1,0 +1,16 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# Cursor local-only
+.cursor/mcp.json
+
+# common
+node_modules/
+dist/
+build/
+.out/
+.next/
+coverage/
+.DS_Store
