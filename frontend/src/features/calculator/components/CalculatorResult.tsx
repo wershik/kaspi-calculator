@@ -23,8 +23,12 @@ export function CalculatorResult({ result }: CalculatorResultProps) {
           <dd>{formatCurrency(result.commissionAmount)}</dd>
         </div>
         <div className="calculator-result__row">
-          <dt>Доставка</dt>
-          <dd>{formatCurrency(result.deliveryAmount)}</dd>
+          <dt>Доставка (тариф)</dt>
+          <dd>{formatCurrency(result.deliveryTariff)}</dd>
+        </div>
+        <div className="calculator-result__row">
+          <dt>НДС за доставку (16%)</dt>
+          <dd>+ {formatCurrency(result.deliveryVat)}</dd>
         </div>
         <div className="calculator-result__row">
           <dt>Упаковка</dt>
@@ -45,6 +49,14 @@ export function CalculatorResult({ result }: CalculatorResultProps) {
         >
           <dt>Прибыль</dt>
           <dd>{formatCurrency(result.profit)}</dd>
+        </div>
+        <div
+          className={`calculator-result__row calculator-result__margin ${
+            result.marginPercent < 0 ? 'calculator-result__profit--loss' : ''
+          }`}
+        >
+          <dt>Маржа</dt>
+          <dd>{result.marginPercent}%</dd>
         </div>
       </dl>
     </div>

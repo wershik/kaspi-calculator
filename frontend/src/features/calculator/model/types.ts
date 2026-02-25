@@ -34,9 +34,16 @@ export interface CalculatorInput {
 /** Result of profit calculation */
 export interface CalculatorResult {
   commissionAmount: number
+  /** Delivery tariff without VAT (₸) */
+  deliveryTariff: number
+  /** VAT 16% on delivery (₸) */
+  deliveryVat: number
+  /** Total delivery cost: deliveryTariff + deliveryVat (₸) */
   deliveryAmount: number
   packaging: number
   costPrice: number
   profit: number
   totalDeductions: number
+  /** Margin as percent of price, one decimal */
+  marginPercent: number
 }

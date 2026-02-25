@@ -22,9 +22,11 @@ test.describe('Calculator flow', () => {
 
     await page.getByRole('button', { name: 'Рассчитать прибыль' }).click()
 
-    // Result: profit 801 ₸ (5000 - 500 - 599 - 100 - 3000)
+    // Result: profit 1 169 ₸ (5000 - 500 - 231 (доставка+НДС) - 100 - 3000)
     await expect(page.getByText('Результат')).toBeVisible()
     await expect(page.getByText(/Прибыль/)).toBeVisible()
-    await expect(page.locator('.calculator-result').filter({ hasText: '801' })).toBeVisible()
+    await expect(page.locator('.calculator-result').filter({ hasText: '1 169' })).toBeVisible()
+    await expect(page.getByText(/НДС за доставку/)).toBeVisible()
+    await expect(page.getByText(/Маржа/)).toBeVisible()
   })
 })
