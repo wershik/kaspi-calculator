@@ -10,6 +10,7 @@
 - Shared lib: formatCurrency, validateCalculatorInput, DELIVERY/PRICE_RANGE/WEIGHT_TIER options and tests
 - Shared UI: Button, Input, Select components
 - CalculatorForm with validation and shared UI; CalculatorResult; App wiring (calculate on submit)
+- Global styles and theme (ProKaspi-style: light background, red accent, form/result layout)
 
 ### Changed
 -
