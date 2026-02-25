@@ -4,6 +4,7 @@
 
 ### Added
 - Calculator spec: formulas, validation, edge cases (`docs/specs/calculator.md`)
+- Frontend scaffold: Vite + React + TS, folder structure (app, features/calculator, shared, styles), Vitest, check script
 
 ### Changed
 -
