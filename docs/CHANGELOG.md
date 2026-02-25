@@ -9,6 +9,7 @@
 - Calculator logic (commission, delivery by price/weight, profit) and unit tests (100% coverage)
 - Shared lib: formatCurrency, validateCalculatorInput, DELIVERY/PRICE_RANGE/WEIGHT_TIER options and tests
 - Shared UI: Button, Input, Select components
+- CalculatorForm with validation and shared UI; CalculatorResult; App wiring (calculate on submit)
 
 ### Changed
 -
