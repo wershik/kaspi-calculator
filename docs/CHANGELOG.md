@@ -12,6 +12,7 @@
 - CalculatorForm with validation and shared UI; CalculatorResult; App wiring (calculate on submit)
 - Global styles and theme (ProKaspi-style: light background, red accent, form/result layout)
 - Playwright E2E: calculator flow (fill form, calculate, assert result)
+- frontend: add coverage, playwright-report, test-results to .gitignore
 
 ### Changed
 -
