@@ -11,6 +11,7 @@
 - Shared UI: Button, Input, Select components
 - CalculatorForm with validation and shared UI; CalculatorResult; App wiring (calculate on submit)
 - Global styles and theme (ProKaspi-style: light background, red accent, form/result layout)
+- Playwright E2E: calculator flow (fill form, calculate, assert result)
 
 ### Changed
 -
