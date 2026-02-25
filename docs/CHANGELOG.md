@@ -3,7 +3,7 @@
 ## [Unreleased]
 
 ### Added
--
+- Calculator spec: formulas, validation, edge cases (`docs/specs/calculator.md`)
 
 ### Changed
 -
